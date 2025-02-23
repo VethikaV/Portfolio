@@ -1,0 +1,84 @@
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  padding: 50px 20px;
+  padding-top: 40px;
+}
+
+.hc {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* ✨ Contact Card */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🎨 Contact Details */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.contact-link,
+.contact-detail {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #3498db;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .hc {
+    font-size: 2.2rem;
+  }
+
+  .contact-card {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .contact-link,
+  .contact-detail {
+    font-size: 1rem;
+  }
+}
