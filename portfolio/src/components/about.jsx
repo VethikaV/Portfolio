@@ -1,4 +1,4 @@
-import './css/about.css';
+import './CSS/about.css';
 import vethika from '../assets/Vethika.jpeg';
 
 
