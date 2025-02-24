@@ -1,7 +1,7 @@
 .project {
   padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(to right, #f8f9fa, #e3f2fd); 
+  background: linear-gradient(to right, pink, whitesmoke);
   padding-top: 50px;
 }
 
@@ -12,7 +12,7 @@
 
 .project__title {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: purple;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -24,7 +24,7 @@
 }
 
 .project__card {
-  background: #ffffff;
+  background: pink;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -38,7 +38,7 @@
 
 .project__card h3 {
   font-size: 1.8rem;
-  color: #3498db; 
+  color: purple; 
   margin-bottom: 10px;
 }
 
@@ -53,7 +53,7 @@
   margin-top: 12px;
   padding: 8px 15px;
   color: #ffffff;
-  background: #3498db;
+  background: palevioletred;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;

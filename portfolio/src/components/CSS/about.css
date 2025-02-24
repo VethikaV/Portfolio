@@ -35,41 +35,49 @@
 }
 
 
-
 /* 🎓 Education Section - Styled Box */
 .education-container {
   background: pink;
-  padding: 15px 25px; /* Reduced padding */
+  padding: 15px 25px; /* Slightly increased padding */
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px; /* Reduced width */
-  width: 80%;
+  max-width: 900px; /* Increased width */
+  width: 90%;
   text-align: left;
   margin-top: 20px;
 }
 
+/* Reduce spacing inside education items */
 .education-item {
-  margin: 10px 0; /* Reduced margin */
-  padding: 10px; /* Reduced padding */
+  margin: 8px 0; /* Reduced margin */
+  padding: 8px 12px; /* Reduced padding */
   background: whitesmoke;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  line-height: 1.3; /* Reduced line spacing */
+  line-height: 1.2; /* Reduced line height */
 }
 
+/* Reduce spacing between headings */
 .education-item h3 {
-  font-size: 1.4rem; /* Slightly smaller */
+  font-size: 1.4rem;
   font-weight: 500;
   color: purple;
-  margin-bottom: 3px; /* Reduced space below */
+  margin-bottom: 2px; /* Less space below */
 }
 
 .education-item h4 {
-  font-size: 1.1rem; /* Slightly smaller */
+  font-size: 1.1rem;
   font-weight: 400;
   color: purple;
-  margin-bottom: 3px; /* Reduced space below */
+  margin-bottom: 2px; /* Less space below */
 }
+
+/* Reduce spacing for text inside education items */
+.education-item p {
+  font-size: 1rem;
+  margin: 2px 0; /* Less space between paragraphs */
+}
+
 
 /* 📑 Internship Descriptions */
 .about p {
