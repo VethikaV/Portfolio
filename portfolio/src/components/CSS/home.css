@@ -6,7 +6,7 @@
   justify-content: flex-start;
   min-height: 100vh; /* Full-screen height */
   text-align: center;
-  background: #dcdcdc; /* Light grey */
+  background: lightgray !important;
   padding: 80px 20px 60px;
 }
 
@@ -22,13 +22,13 @@
 
 /* 🔠 Name Styling */
 .home__name {
-  font-size: 3.2rem; 
+  font-size: 3.2rem;
   font-weight: 700;
-  color: #000; /* Black text */
+  color: black !important;
   letter-spacing: 1.5px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  border-bottom: 4px solid #555; /* Dark grey */
+  border-bottom: 4px solid black; /* Black underline */
   padding-bottom: 12px;
   transition: all 0.3s ease-in-out;
 }
@@ -45,7 +45,7 @@
   align-items: center;
   margin-top: 15px;
   padding: 40px;
-  background: #ffffff;
+  background: #f5f5f5;
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease-in-out;
@@ -66,10 +66,10 @@
 }
 
 .home__img {
-  width: 200px;  
+  width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 4px solid #555; /* Dark grey */
+  border: 4px solid black; /* Black border */
   object-fit: cover;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -77,6 +77,15 @@
 .home__img:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 📄 Description */
+.home__desc {
+  font-size: 1.2rem;
+  color: black !important;
+  margin-top: 10px;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 /* 🎨 Social Media Links */
@@ -94,27 +103,54 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #555, #888); /* Darker grey gradient */
+  background: #0077b6; /* Medium blue */
   color: white;
   font-size: 24px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
 }
 
 .home__social-link:hover {
-  background: linear-gradient(135deg, #222, #444); /* Darker hover */
+  background: #023e8a; /* Darker blue */
   transform: translateY(-6px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* 📱 Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .home {
     padding: 60px 20px;
   }
 
   .home__name {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+  }
+
+  .home__perfil {
+    width: 85%;
+    padding: 35px;
+  }
+
+  .home__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__desc {
+    font-size: 1.1rem;
+  }
+
+  .home__social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__name {
+    font-size: 2.4rem;
   }
 
   .home__perfil {
@@ -123,13 +159,17 @@
   }
 
   .home__img {
-    width: 170px;  
-    height: 170px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .home__desc {
+    font-size: 1rem;
   }
 
   .home__social-link {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     font-size: 20px;
   }
 }

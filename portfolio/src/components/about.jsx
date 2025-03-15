@@ -7,9 +7,9 @@ function About() {
     <div className="about">
       <h1>ABOUT ME</h1>
       <img className="img" src={vethika} alt="Profile" />
-      <h4>I am an enthusiastic Data Analyst with a  foundation in Machine Learning.
+      <h2>I am an enthusiastic Data Analyst with a  foundation in Machine Learning.
          I have hands-on experience working with data using Excel and possess proficiency in C programming and Java for problem-solving 
-         and software development. Additionally, I have expertise in Figma for UI/UX design and Canva for creative content creation.</h4>
+         and software development. Additionally, I have expertise in Figma for UI/UX design and Canva for creative content creation.</h2>
 
       
       <div className="education-container">
@@ -32,9 +32,12 @@ function About() {
         </div>
       </div>
 
-        
       <div className="education-container">
       <h1>Internship</h1>
+      </div>
+        
+      <div className="education-container">
+      
       <h2>Engine Factory, Avadi</h2>
       <h4>June 25, 2024 to July 2, 2024</h4>
       <p>Gained in-depth knowledge of various engine types and their components. Observed real-time heat treatment processes and manufacturing techniques. Learned about quality control procedures and testing methodologies.</p>
