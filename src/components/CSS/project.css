@@ -1,66 +1,104 @@
+/* 🚀 Project Section */
 .project {
   padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(to right, #f8f9fa, #e3f2fd); 
-  padding-top: 50px;
+  background: lightgray;
+  padding-top: 100px;
 }
 
+/* 📌 Project Container */
 .project__container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-}
-
-.project__title {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-.project__grid {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  align-items: center;
 }
 
+/* 🎯 Title Styling */
+.project__title {
+  font-size: 2.8rem;
+  color: black; /* Darker professional shade */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.project__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: black;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* 🎭 Project Grid */
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* 🏆 Project Card */
 .project__card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 .project__card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* 🎨 Project Title */
 .project__card h3 {
   font-size: 1.8rem;
-  color: #3498db; 
-  margin-bottom: 10px;
+  color: black; /* Dark professional purple */
+  margin-bottom: 12px;
 }
 
+/* 📄 Project Description */
 .project__card p {
-  color: #555;
+  color: #333; /* Dark gray for professional readability */
   font-size: 1rem;
   line-height: 1.6;
 }
 
+/* 🔗 Project Link Button */
 .project__link {
   display: inline-block;
-  margin-top: 12px;
-  padding: 8px 15px;
-  color: #ffffff;
-  background: #3498db;
+  margin-top: 15px;
+  padding: 10px 18px;
+  color: white;
+  background: black;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
 }
 
 .project__link:hover {
-  background: #2c81c0; 
+  
   text-decoration: none;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .project__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project__title {
+    font-size: 2.2rem;
+  }
 }

@@ -1,22 +1,26 @@
-
+/* 🌟 Contact Section */
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 100vh;
+  width: 100%;
   text-align: center;
-  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
-  padding: 50px 20px;
-  padding-top: 40px;
+  background: #d3d3d3; /* Light Gray */
+  padding: 80px 20px;
 }
 
+/* 🎯 Contact Heading */
 .hc {
-  font-size: 2.8rem;
-  font-weight: 600;
-  color: #2c3e50;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #000000; /* Black */
+  letter-spacing: 1.2px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #7f8c8d;
+  padding-bottom: 12px;
 }
 
 /* ✨ Contact Card */
@@ -24,61 +28,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  padding: 25px;
+  max-width: 750px;
+  width: 90%;
   background: #ffffff;
-  border-radius: 12px;
+  padding: 40px;
+  border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* 🎨 Contact Details */
+/* 📞 Contact Details */
 .contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 16px;
+  margin-top: 18px;
 }
 
 .contact-link,
 .contact-detail {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: #000000; /* Black */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   font-weight: 500;
+  padding: 12px 18px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  background: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-link:hover {
-  color: #3498db;
+  background: #34495e;
+  color: white;
+  transform: scale(1.05);
 }
 
+/* 🔋 Icons */
 .icon {
-  font-size: 1.5rem;
-  color: #3498db;
+  font-size: 1.7rem;
+  color: #7f8c8d;
 }
 
 /* 📱 Responsive Design */
 @media (max-width: 768px) {
+  .contact-container {
+    padding: 50px 20px;
+  }
+
   .hc {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .contact-card {
     width: 95%;
-    padding: 20px;
+    padding: 30px;
   }
 
   .contact-link,
   .contact-detail {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 10px;
   }
 }

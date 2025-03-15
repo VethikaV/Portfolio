@@ -1,4 +1,4 @@
-import './css/about.css';
+import './CSS/about.css';
 import vethika from '../assets/Vethika.jpeg';
 
 
@@ -32,15 +32,20 @@ function About() {
         </div>
       </div>
 
-      
+        
+      <div className="education-container">
       <h1>Internship</h1>
       <h2>Engine Factory, Avadi</h2>
       <h4>June 25, 2024 to July 2, 2024</h4>
       <p>Gained in-depth knowledge of various engine types and their components. Observed real-time heat treatment processes and manufacturing techniques. Learned about quality control procedures and testing methodologies.</p>
+      </div>
 
+
+      <div className="education-container">
       <h2>Student Technology Empowerment Program at CDW</h2>
       <h4>January 20, 2025 to January 30, 2025</h4>
       <p>Hands-on experience with Large Language Models (LLMs) and their applications. Worked on a real-time project using RAG (Retrieval-Augmented Generation) and AI agents. Developed skills in AI integration and automation for practical solutions.</p>
+      </div>
     </div>
   );
 }
