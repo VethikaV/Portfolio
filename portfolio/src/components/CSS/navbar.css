@@ -1,67 +1,237 @@
-
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: palevioletred;
-  padding: 15px 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+/* 🌟 Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 🌟 Body & HTML */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa; /* Light grey background */
+  color: #2c3e50; /* Dark grey text */
+}
 
+/* 🌟 Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.5); /* Light transparent white */
+  backdrop-filter: blur(12px);
+  padding: 0 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌐 Navbar Logo */
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+/* 🔗 Navbar Links */
 .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Navigation Links */
-.li {
+/* 🌍 Navigation Items */
+.navbar ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  color: #2c3e50;
+  font-weight: 600;
   font-size: 1rem;
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: all 0.3s ease-in-out;
   position: relative;
-  margin: 0 10px;
 }
 
-
-.li:hover {
-  background: linear-gradient(135deg);
-  color: white;
-  padding: 12px 18px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+/* 🎨 Hover Effect (Subtle Light Grey) */
+.navbar ul li a:hover {
+  background: #dfe6e9; /* Soft grey */
+  color: #34495e; /* Slightly darker grey */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Underline Animation */
-.li::after {
+/* 🔻 Underline Animation */
+.navbar ul li a::after {
   content: "";
   position: absolute;
   left: 50%;
   bottom: -4px;
   width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #ff6b6b, pink);
+  height: 3px;
+  background: linear-gradient(90deg, #b2bec3, #636e72); /* Grey gradient */
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-.li:hover::after {
+.navbar ul li a:hover::after {
   width: 100%;
   left: 0;
 }
 
-/* Add margin-top to the content to prevent overlap */
+/* 📱 Mobile Responsive Navbar */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 12px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* 📜 Prevent Content Overlap */
 .content {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 20px;
   text-align: center;
+}
+
+/* 🌟 Contact Section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: radial-gradient(circle, #f0f0f0 30%, #dcdde1 70%, #bdc3c7);
+  padding: 60px 20px;
+}
+
+/* 🎯 Contact Heading */
+.hc {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #34495e;
+  letter-spacing: 1.2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #7f8c8d;
+  padding-bottom: 10px;
+}
+
+/* ✨ Contact Card */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 90%;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 📞 Contact Details */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.contact-link,
+.contact-detail {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link {
+  background: #ecf0f1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link:hover {
+  background: #bdc3c7; /* Light grey */
+  color: #2c3e50;
+  transform: scale(1.05);
+}
+
+/* 🖋️ Icons */
+.icon {
+  font-size: 1.6rem;
+  color: #7f8c8d;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px;
+  }
+
+  .hc {
+    font-size: 2.4rem;
+  }
+
+  .contact-card {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .contact-link,
+  .contact-detail {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
