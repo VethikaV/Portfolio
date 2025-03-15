@@ -3,130 +3,86 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
-  height: 80px; /* Slightly taller for better spacing */
-  background: #bdc3c7; /* Grey background */
+  width: 100%;
+  height: 70px;
+  background: rgba(189, 195, 199, 0.9); /* Light grey with slight transparency */
   backdrop-filter: blur(8px);
-  padding: 0 50px; /* Increased padding */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 0 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-
-/* 🌐 Navbar Logo */
-.navbar .logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2c3e50;
-  text-decoration: none;
-}
-
-/* 🔗 Navbar Links */
-.navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Full width */
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔗 Navbar Links */
+.navbar nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* 🌍 Navigation Items */
-.navbar ul li {
+.navbar nav ul li {
   list-style: none;
-  margin: 0 20px;
 }
 
-.navbar ul li a {
+.navbar nav ul li .li {
   text-decoration: none;
   color: #2c3e50;
   font-weight: 600;
-  font-size: 1.1rem;
-  padding: 12px 18px; /* Increased padding */
+  font-size: 1rem;
+  padding: 10px 15px;
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
-  position: relative;
 }
 
 /* 🎨 Hover Effect */
-.navbar ul li a:hover {
-  background: #dfe6e9; /* Soft grey */
+.navbar nav ul li .li:hover {
+  background: #dfe6e9;
   color: #34495e;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 🔻 Underline Animation */
-.navbar ul li a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #b2bec3, #636e72);
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.navbar ul li a:hover::after {
-  width: 100%;
-  left: 0;
 }
 
 /* 📱 Mobile Responsive Navbar */
 .nav-toggle {
   display: none;
-  font-size: 2.2rem;
+  font-size: 2rem;
   cursor: pointer;
+  background: none;
+  border: none;
   color: #2c3e50;
+  position: absolute;
+  right: 20px;
 }
 
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 0 30px; /* Adjust padding for medium screens */
-  }
-
-  .navbar .logo {
-    font-size: 1.8rem;
-  }
-
-  .navbar ul li {
-    margin: 0 15px;
-  }
-
-  .navbar ul li a {
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
-}
-
+/* Mobile Styling */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 0 20px; /* Less padding on smaller screens */
+  .nav-toggle {
+    display: block;
   }
 
-  .navbar ul {
+  .navbar nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px; /* Adjusted for taller navbar */
+    top: 70px;
     left: 0;
     width: 100%;
-    background: #bdc3c7; /* Grey background */
+    background: rgba(189, 195, 199, 0.95);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    padding: 15px 0;
+    text-align: center;
     transition: all 0.3s ease-in-out;
   }
 
-  .navbar ul.active {
+  .navbar nav ul.active {
     display: flex;
   }
 
-  .navbar ul li {
-    margin: 15px 0;
-  }
-
-  .nav-toggle {
-    display: block;
+  .navbar nav ul li {
+    margin: 12px 0;
   }
 }
