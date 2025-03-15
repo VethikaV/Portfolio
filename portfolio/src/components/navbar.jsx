@@ -7,12 +7,14 @@ const Nav = () => {
 
   return (
     <header className="navbar">
+      {/* Navbar Button for Mobile */}
       <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
-        ☰
+        ☰ Menu
       </button>
 
-      <nav>
-        <ul className={isOpen ? "active" : ""}>
+      {/* Navbar Links (Hidden by default on mobile) */}
+      <nav className={isOpen ? "active" : ""}>
+        <ul>
           <li><Link className="li" to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link className="li" to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link className="li" to="/project" onClick={() => setIsOpen(false)}>Project</Link></li>
