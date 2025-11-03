@@ -1,0 +1,485 @@
+/* ===========================
+🌐 GLOBAL STYLES
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+🌟 NAVBAR
+=========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar nav ul li a {
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  background: #222;
+  color: #fff;
+}
+
+/* Mobile Navbar */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+/* ===========================
+🏠 HOME SECTION
+=========================== */
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 80px;
+  background: linear-gradient(135deg, #fafafa, #e8e8e8);
+  gap: 60px;
+}
+
+.home__image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 6px solid #222;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home__img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.home__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.home__name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  border-bottom: 4px solid #111;
+  margin-bottom: 20px;
+}
+
+.home__desc {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.home__social {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.home__social-link {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.home__social-link:hover {
+  background: #444;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 40px;
+  }
+  .home__name {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 80px 25px;
+  }
+  .home__img {
+    width: 180px;
+    height: 180px;
+  }
+  .home__name {
+    font-size: 2rem;
+  }
+  .home__desc {
+    font-size: 1rem;
+  }
+}
+
+/* ===========================
+👩‍🎓 ABOUT SECTION
+=========================== */
+.about {
+  text-align: center;
+  padding: 100px 20px;
+  background: #f9f9f9;
+}
+
+.about h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.about h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #222;
+  margin-top: 10px;
+}
+
+.img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #222;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.about h2 {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.education-container,
+.internship-container {
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 950px;
+  text-align: left;
+}
+
+.education-item {
+  background: #f4f4f4;
+  border-left: 5px solid #222;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* ===========================
+🏅 ACHIEVEMENTS & CERTIFICATIONS
+=========================== */
+.achievement {
+  padding: 100px 20px;
+  background: #f4f4f9;
+  text-align: center;
+}
+
+.achievement h2 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
+}
+
+.achievement__container {
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  max-width: 850px;
+  margin: 25px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement__container:hover {
+  transform: translateY(-5px);
+}
+
+.achievement__container h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 15px;
+  border-left: 4px solid #222;
+  padding-left: 12px;
+}
+
+.achievement__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.achievement__list li {
+  background: #f9f9f9;
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.achievement__list li:hover {
+  background: #f1f1f1;
+  transform: scale(1.02);
+}
+
+.achievement__container ol.achievement__list {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.achievement__container ol.achievement__list li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+/* ===========================
+🚀 PROJECTS
+=========================== */
+.project {
+  background: #fafafa;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.project__title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project__card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-5px);
+}
+
+.project__link {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.project__link:hover {
+  background: #444;
+}
+
+/* ===========================
+📞 CONTACT SECTION
+=========================== */
+.contact-container {
+  background: linear-gradient(135deg, #f7f7f7, #e8e8e8);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hc {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  width: 90%;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-link,
+.contact-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  color: #222;
+  background: #f9f9f9;
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: #222;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.contact-link:hover .icon {
+  color: #fff;
+}
+
+/* ===========================
+📱 RESPONSIVE GLOBAL
+=========================== */
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+  .education-container, .internship-container {
+    padding: 20px;
+  }
+  .project__card, .achievement__container, .contact-card {
+    padding: 25px;
+  }
+  .contact-link, .contact-detail {
+    font-size: 1rem;
+  }
+}

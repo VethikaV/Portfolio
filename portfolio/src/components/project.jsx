@@ -1,42 +1,186 @@
 import React from 'react';
-import './CSS/project.css';
+import './CSS/style.css';
 
-const project = () => {
+const Project = () => {
   return (
     <section className="project section" id="project">
       <div className="project__container">
-        <h2 className="project__title">MY PROJECT</h2>
+        <h2 className="project__title">MY PROJECTS</h2>
+
         <div className="project__grid">
+
+          {/* Code Generator RAG */}
           <div className="project__card">
-            <h3>House-price-prediction</h3>
-            <p>House Price Prediction 🏠💰 Description: This repository contains a machine learning project 
-              aimed at predicting house prices based on various features such as location, size, number of rooms,
-               and more. By leveraging regression algorithms, this project provides a practical solution for estimating 
-               real estate prices.
-
-Features:
-
-Data Preprocessing: Cleaning and transforming raw data into a usable format.
- Exploratory Data Analysis (EDA): Insights and visualizations to understand trends and correlations. Modeling: Implementation of machine learning algorithms (e.g., Linear Regression, Decision Trees, Random Forests). Evaluation: Assessing model performance using metrics like RMSE, MAE, and R². Prediction: Predicting house prices for new or unseen data. Technologies Used:
-
-Python: Core programming language for the project. Libraries: Pandas and NumPy: 
-Data manipulation and analysis. Matplotlib and Seaborn: Visualization. Scikit-learn: Machine learning algorithms and model evaluation.</p>
-            <a href="https://github.com/VethikaV/House-Price-Prediction.git" target="_blank" rel="noopener noreferrer" className="project__link">View on GitHub</a>
+            <h3>Code Generator RAG</h3>
+            <p>
+              An AI-powered code generation system using Retrieval-Augmented Generation (RAG)
+              for context-aware and efficient code creation.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Python (Flask), LangChain, ChromaDB, Streamlit, OpenAI API</li>
+              <li><b>Features:</b> File ingestion, contextual retrieval, intelligent code generation</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/Code_Generator_RAG.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
           </div>
 
+          {/* Claims Fraud Detection */}
           <div className="project__card">
-            <h3>Poem_generator_RAG</h3>
-            <p>Poem Generator RAG
-            Poem Generator RAG is an advanced AI-powered system designed to generate creative 
-            and meaningful poetry using Retrieval-Augmented Generation (RAG). By leveraging a combination of
-             machine learning models and knowledge retrieval, 
-            it enhances the quality of generated poems by incorporating relevant contextual information</p>
-            <a href="https://github.com/VethikaV/Poem_generator_RAG.git" target="_blank" rel="noopener noreferrer" className="project__link">View on GitHub</a>
+            <h3>Claims Fraud Detection</h3>
+            <p>
+              A machine learning system designed to detect fraudulent healthcare insurance
+              claims using advanced classification algorithms.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Flask, Pandas, NumPy, Scikit-learn, Joblib, Matplotlib, OpenPyXL</li>
+              <li><b>Models:</b> XGBoost, Random Forest, Logistic Regression</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/Claims-Fraud-Detection-Analysis.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
           </div>
+
+          {/* Facial Emotion Recognition */}
+          <div className="project__card">
+            <h3>Facial Emotion Recognition</h3>
+            <p>
+              A real-time emotion recognition system using OpenCV and DeepFace for face detection
+              and emotion analysis in live video streams.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Python, OpenCV, DeepFace, Haarcascade XML</li>
+              <li><b>Features:</b> Real-time detection, emotion labeling, live streaming</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/Facial_Emotion_Detection.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Safety Detection YOLOv8 */}
+          <div className="project__card">
+            <h3>Safety Detection YOLOv8</h3>
+            <p>
+              A real-time computer vision project that identifies essential PPE such as helmets,
+              masks, vests, and gloves using the YOLOv8 model.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Python, Ultralytics YOLOv8</li>
+              <li><b>Features:</b> Real-time detection, compliance tracking, pre-trained model</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/Safety-Detection-YOLOv8.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Snake Game in Java */}
+          <div className="project__card">
+            <h3>Snake Game (Java AWT)</h3>
+            <p>
+              A classic Snake Game built using Java AWT with colorful food items, bombs,
+              and dynamic scoring for an engaging experience.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Java AWT, Threading, TimerTask</li>
+              <li><b>Features:</b> Keyboard controls, real-time gameplay, game loop</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/SnakeGame.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Todo App */}
+          <div className="project__card">
+            <h3>Todo App</h3>
+            <p>
+              A responsive and minimalistic Todo App with a modern UI, theme toggle,
+              and live task progress tracking.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> HTML, CSS, JavaScript</li>
+              <li><b>Features:</b> Dark/Light mode, progress bar, task tracking</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/TodoList.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+          {/* Portfolio Website */}
+          <div className="project__card">
+            <h3>Portfolio Website</h3>
+            <p>
+              A modern personal portfolio website showcasing projects and achievements,
+              built using React and Vite.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> React, Vite, CSS3</li>
+              <li><b>Features:</b> Responsive design, smooth navigation, modular UI</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/Portfolio.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
+            {/* House Price Prediction */}
+          <div className="project__card">
+            <h3>House Price Prediction</h3>
+            <p>
+              A regression-based machine learning project that predicts house prices using
+              features such as location, area, and number of rooms.
+            </p>
+            <ul>
+              <li><b>Tech Stack:</b> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</li>
+              <li><b>Models:</b> Linear Regression, Decision Tree, Random Forest</li>
+            </ul>
+            <a
+              href="https://github.com/VethikaV/House-Price-Prediction.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default project;
+export default Project;

@@ -1,4 +1,4 @@
-import './CSS/contact.css';
+import './CSS/style.css';
 import { RiLinkedinBoxFill, RiMailFill, RiPhoneFill } from 'react-icons/ri';
 
 const Contact = () => {

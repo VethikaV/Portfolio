@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/home.css';
+import './CSS/style.css';
 import vethika from '../assets/cute_photo.jpeg'
 
 import { RiInstagramLine, RiLinkedinBoxFill, RiGithubFill } from 'react-icons/ri';
