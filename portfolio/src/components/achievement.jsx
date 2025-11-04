@@ -14,11 +14,22 @@ const Achievement = () => {
             <strong>GeeksforGeeks Campus Mantri</strong> — St. Joseph’s Institute of Technology (2024–2025)
           </li>
           <li>
-            Organized and hosted two coding events — <strong>“St. Joseph’s × GeeksforGeeks”</strong> with 100+ participants
+            Organized and hosted two coding events — <strong>“St. Joseph’s × GeeksforGeeks”</strong> with 200+ participants
           </li>
           <li>
+            
             Solved <strong>150+</strong> problems on LeetCode, <strong>1000+</strong> on Skillrack, and <strong>100+</strong> on GeeksforGeeks
-          </li>
+            </li>
+         <li>
+            Participated in the Finals of the <strong>AI Innovate Hackathon</strong> conducted by <strong>Sri Eshwar THIRAN 2025</strong> on February 20, 2025.
+      </li>
+       <li>
+         Served as the <strong>Media Team Head</strong> for the event <strong>AiZen 2k25</strong> conducted on August 30, 2025.
+       </li>
+        <li>
+          Contributed as a <strong>Media Team Member</strong> for the event <strong>AiZen 2k24</strong> conducted on September 28, 2024.
+        </li>
+
         </ul>
       </div>
 
@@ -32,6 +43,10 @@ const Achievement = () => {
           <li>NPTEL: Database Management Systems</li>
           <li>NPTEL: Introduction to Machine Learning (Elite)</li>
           <li>Typewriting Senior — English & Tamil (First Class)</li>
+          <li>Achieved a score of 161 (B2 CEFR Level) in the Cambridge English Linguaskill Business Test,
+             demonstrating strong proficiency in business communication.</li>
+          
+           
         </ol>
       </div>
     </div>

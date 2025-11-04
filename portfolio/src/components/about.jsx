@@ -20,7 +20,7 @@ function About() {
             <h3>2022-2026 (Current)</h3>
             <h4>B.Tech - Artificial Intelligence and Data Science</h4>
             <h4>St. Joseph's Institute of Technology</h4>
-            <h4>CGPA: 8.72</h4>
+            <h4>CGPA: 8.74</h4>
           </div>
 
           <div className="education-item">
@@ -32,7 +32,7 @@ function About() {
           <div className="education-item">
             <h3>2020 - 10th General</h3>
             <h4>Alwin Memorial Public School</h4>
-            <h4>Percentage: 91.3%</h4>
+            <h4>Percentage: 91.8%</h4>
           </div>
         </div>
       </div>
