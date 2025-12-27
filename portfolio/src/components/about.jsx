@@ -6,10 +6,14 @@ function About() {
     <div className="about">
       <h1>ABOUT ME</h1>
       <img className="img" src={vethika} alt="Profile" />
+
       <h2>
-        I am a passionate and detail-oriented Data Analyst with a strong foundation in Artificial Intelligence and Machine Learning. 
-        I have hands-on experience in data handling and analysis using Excel and MySQL, along with proficiency in Java, C, and Python for problem-solving and software development. 
-        I also possess front-end development skills in React.js and Node.js, and expertise in design tools such as Figma, Adobe Illustrator, and Canva for creating visually engaging and user-centric designs.
+        I am a passionate and detail-oriented Data Analyst with a strong foundation in Artificial
+        Intelligence and Machine Learning. I have hands-on experience in data handling and analysis
+        using Excel and MySQL, along with proficiency in Java, C, and Python for problem-solving and
+        software development. I also possess front-end development skills in React.js and Node.js,
+        and expertise in design tools such as Figma, Adobe Illustrator, and Canva for creating
+        visually engaging and user-centric designs.
       </h2>
 
       {/* 🎓 Education Section */}
@@ -39,47 +43,101 @@ function About() {
 
       {/* 💼 Internship Section */}
       <div className="internship-container">
-        <h1>Internship</h1>
+        <h1>Internship Experience</h1>
         <div className="internship-list">
+
+          {/* Internship 1 */}
           <div className="internship-item">
             <h2>Engine Factory, Avadi</h2>
-            <h4>June 25, 2024 to July 2, 2024</h4>
+            <h4>June 25, 2024 – July 2, 2024</h4>
             <p>
-              Gained in-depth knowledge of various engine types and their components.
-              Observed real-time heat treatment processes and manufacturing techniques.
-              Learned about quality control procedures and testing methodologies.
+              During this industrial internship, I gained practical exposure to large-scale
+              manufacturing environments and mechanical production workflows. I studied different
+              types of engines, their core components, and assembly processes used in real-world
+              defense manufacturing.
+            </p>
+            <p>
+              I closely observed heat treatment techniques such as annealing and hardening, along
+              with precision machining processes. I also learned how quality control standards are
+              enforced through inspections, tolerance checks, and performance testing to ensure
+              reliability and safety.
+            </p>
+            <p>
+              This experience strengthened my understanding of industrial operations, production
+              efficiency, and the importance of accuracy and compliance in high-stakes engineering
+              systems.
             </p>
           </div>
 
+          {/* Internship 2 */}
           <div className="internship-item">
-            <h2>Student Technology Empowerment Program at CDW</h2>
-            <h4>January 20, 2025 to January 30, 2025</h4>
+            <h2>Student Technology Empowerment Program – CDW</h2>
+            <h4>January 20, 2025 – January 30, 2025</h4>
             <p>
-              Hands-on experience with Large Language Models (LLMs) and their applications.
-              Worked on a real-time project using Retrieval-Augmented Generation (RAG) and AI agents.
-              Developed skills in AI integration and automation for practical solutions.
+              This internship focused on emerging technologies in Artificial Intelligence,
+              particularly Large Language Models (LLMs) and intelligent automation. I received
+              hands-on training in prompt engineering, AI workflows, and real-time system
+              integration.
+            </p>
+            <p>
+              I worked on a project using Retrieval-Augmented Generation (RAG), where I integrated
+              external knowledge sources with LLMs to generate accurate and context-aware responses.
+              I also explored AI agents and automation pipelines for solving real-world business
+              problems.
+            </p>
+            <p>
+              The program enhanced my understanding of applied AI systems, teamwork in technical
+              environments, and the ethical deployment of generative AI solutions.
             </p>
           </div>
 
+          {/* Internship 3 */}
           <div className="internship-item">
             <h2>AI Research Intern — Sri Gurubhyo Technologies (Remote)</h2>
-            <h4>April 1, 2025 to May 31, 2025</h4>
+            <h4>April 1, 2025 – May 31, 2025</h4>
             <p>
-              Automated employee data integration from Excel into the company’s website using Python.
-              Built a multilingual OCR pipeline with Tesseract and Deep Translator, enabling real-time text extraction and translation across 116+ languages.
-              Developed a Flask backend with secure image upload and language detection.
+              As an AI Research Intern, I automated employee data integration by designing Python
+              scripts to extract, clean, and validate large Excel datasets before securely
+              integrating them into the company’s internal systems. This significantly reduced
+              manual data handling and improved data consistency.
+            </p>
+            <p>
+              I designed and implemented a multilingual OCR and translation pipeline using
+              Tesseract OCR and Deep Translator. The system enabled real-time text extraction and
+              translation across 116+ languages, making document processing faster and more
+              accessible.
+            </p>
+            <p>
+              Additionally, I developed a Flask-based backend to handle secure image uploads,
+              language detection, error handling, and API responses. This internship strengthened
+              my skills in backend development, AI pipelines, data validation, and scalable system
+              design.
             </p>
           </div>
 
+          {/* Internship 4 */}
           <div className="internship-item">
             <h2>Data Engineer Intern — Vebbox Software Solution</h2>
-            <h4>June 1, 2025 to June 29, 2025</h4>
+            <h4>June 1, 2025 – June 29, 2025</h4>
             <p>
-              Supported the design and quality assurance of educational technology products.
-              Worked on database optimization and data migration tasks.
-              Collaborated with developers to ensure smooth backend integration and data consistency.
+              In this role, I worked on the backend and data engineering aspects of educational
+              technology platforms. My responsibilities included validating datasets, ensuring
+              accurate data flow between backend services and user-facing applications, and
+              maintaining data integrity across systems.
+            </p>
+            <p>
+              I assisted in SQL-based database optimization, data migration tasks, and quality
+              assurance testing. I created large test datasets to verify transformations,
+              analytics outputs, and system reliability under real-world conditions.
+            </p>
+            <p>
+              I collaborated closely with developers and testers to identify issues, debug backend
+              workflows, and re-test fixes before production releases. This experience enhanced my
+              understanding of production-grade systems, data reliability, and cross-functional
+              teamwork.
             </p>
           </div>
+
         </div>
       </div>
     </div>

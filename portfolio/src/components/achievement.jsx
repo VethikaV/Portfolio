@@ -45,7 +45,7 @@ const Achievement = () => {
           <li>Typewriting Senior — English & Tamil (First Class)</li>
           <li>Achieved a score of 161 (B2 CEFR Level) in the Cambridge English Linguaskill Business Test,
              demonstrating strong proficiency in business communication.</li>
-          
+          <li>Presented LLM-Powered Code Generation Using RAG Framework with LLaMA 3 at RV College of Engineering, Bengaluru on 21 November 2025</li>
            
         </ol>
       </div>
