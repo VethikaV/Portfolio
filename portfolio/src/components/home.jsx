@@ -1,20 +1,38 @@
 import React from 'react';
 import './CSS/style.css';
-import vethika from '../assets/cute_photo.jpeg'
+import vethika from '../assets/cute_photo.jpeg';
+import resume from '../assets/Vethika.pdf';
 
-import { RiInstagramLine, RiLinkedinBoxFill, RiGithubFill } from 'react-icons/ri';
- 
+import {
+  RiInstagramLine,
+  RiLinkedinBoxFill,
+  RiGithubFill,
+  RiDownloadLine
+} from 'react-icons/ri';
+
 const Home = () => {
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
+
         <h1 className="home__name">Vethika V</h1>
+
         <div className="home__perfil">
           <div className="home__image">
             <img src={vethika} alt="Vethika" className="home__img" />
             <div className="home__shadow"></div>
             <div className="geometric-box"></div>
           </div>
+
+          {/* Resume Button - Correct Position */}
+          <a
+            href={resume}
+            download
+            className="home__resume-btn"
+          >
+            <RiDownloadLine size={18} />
+            Download Resume
+          </a>
 
           <div className="home__social">
             <a href="https://www.instagram.com/_vethika__/" target="_blank" rel="noopener noreferrer" className="home__social-link">
@@ -26,8 +44,9 @@ const Home = () => {
             <a href="https://github.com/VethikaV" target="_blank" rel="noopener noreferrer" className="home__social-link">
               <RiGithubFill size={24} />
             </a>
-          </div>    
+          </div>
         </div>
+
       </div>
     </section>
   );
