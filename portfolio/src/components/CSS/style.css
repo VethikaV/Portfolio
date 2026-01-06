@@ -60,25 +60,28 @@ a:hover {
   text-transform: uppercase;
 }
 
-/* Navigation links */
+/* Navigation links (buttons) */
 .navbar nav ul {
   display: flex;
   gap: 32px;
   list-style: none;
 }
 
-.navbar nav ul li a {
+.navbar nav ul li button {
   position: relative;
   font-weight: 600;
   color: #333;
   font-size: 1rem;
   padding: 10px 18px;
   border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 /* Hover underline animation */
-.navbar nav ul li a::after {
+.navbar nav ul li button::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -89,14 +92,14 @@ a:hover {
   transition: width 0.3s ease;
 }
 
-.navbar nav ul li a:hover::after,
-.navbar nav ul li a.active::after {
+.navbar nav ul li button:hover::after,
+.navbar nav ul li button.active::after {
   width: 100%;
 }
 
 /* Hover and active effect (light grey background) */
-.navbar nav ul li a:hover,
-.navbar nav ul li a.active {
+.navbar nav ul li button:hover,
+.navbar nav ul li button.active {
   background: #e5e5e5; /* subtle light grey */
   color: #111;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -161,7 +164,7 @@ a:hover {
     gap: 18px;
   }
 
-  .navbar nav ul li a {
+  .navbar nav ul li button {
     font-size: 1.1rem;
   }
 }
