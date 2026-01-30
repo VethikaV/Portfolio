@@ -24,7 +24,7 @@ function About() {
             <h3>2022-2026 (Current)</h3>
             <h4>B.Tech - Artificial Intelligence and Data Science</h4>
             <h4>St. Joseph's Institute of Technology</h4>
-            <h4>CGPA: 8.74</h4>
+            <h4>CGPA: 8.78</h4>
           </div>
 
           <div className="education-item">

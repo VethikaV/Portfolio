@@ -155,6 +155,30 @@ const Project = () => {
               View on GitHub
             </a>
           </div>
+          {/* Typing Speed Test */}
+<div className="project__card">
+  <h3>Typing Speed Test</h3>
+  <p>
+    A web-based typing speed test application that measures typing speed and
+    accuracy in real time, designed to improve users' typing skills.
+  </p>
+  <ul>
+    <li><b>Tech Stack:</b> React, JavaScript, CSS3</li>
+    <li>
+      <b>Features:</b> Real-time WPM calculation, accuracy tracking,
+      timer-based test, responsive UI
+    </li>
+  </ul>
+  <a
+    href="https://github.com/VethikaV/TypingSpeedTest.git"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project__link"
+  >
+    View on GitHub
+  </a>
+</div>
+
 
             {/* House Price Prediction */}
           <div className="project__card">
